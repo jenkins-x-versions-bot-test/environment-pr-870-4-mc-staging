@@ -1,19 +1,19 @@
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-s52j7[0m
-{"level":"warn","ts":1583929787.049252,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583929787.0498662,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-credential-initializer-c8n4v[0m
+{"level":"warn","ts":1583929799.5602894,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583929799.5607598,"logger":"fallback-logger","caller":"creds-init/main.go:40","msg":"Credentials initialized."}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-5rqmb[0m
-{"level":"warn","ts":1583929788.0850122,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
-{"level":"info","ts":1583929788.0860937,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-working-dir-initializer-bx2qt[0m
+{"level":"warn","ts":1583929799.9094384,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: open /var/run/ko/HEAD: no such file or directory"}
+{"level":"info","ts":1583929799.9102647,"logger":"fallback-logger","caller":"bash/main.go:64","msg":"Successfully executed command \"sh -c mkdir -p /workspace/source\"; output "}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-place-tools[0m
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jenkins-x-versions-bot-test-env-7qm6g-n7kxp[0m
-{"level":"warn","ts":1583929793.1683857,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-**-support-backwards-incompats\" is not a valid GitHub commit ID"}
-{"level":"info","ts":1583929794.1591175,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***************************/environment-pr-870-4-mc-staging.git @ master in path /workspace/source"}
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-jenkins-x-versions-bot-test-env-htwgk-pdvkp[0m
+{"level":"warn","ts":1583929831.0062146,"logger":"fallback-logger","caller":"logging/config.go:69","msg":"Fetch GitHub commit ID from kodata failed: \"ref: refs/heads/0.8.0-jx-support-backwards-incompats\" is not a valid GitHub commit ID"}
+{"level":"info","ts":1583929831.9879055,"logger":"fallback-logger","caller":"git/git.go:103","msg":"Successfully cloned https://github.com/***************************/environment-pr-870-4-mc-staging.git @ master in path /workspace/source"}
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
 Using SHAs from PULL_REFS=master:f9ec9b4b9278d41ed8161410a64ab034fd0d12bc,1:9d25b5e18d21ec488d0e3ebd92794e6ddde07288
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 9d25b5e18d21ec488d0e3ebd92794e6ddde07288: f9ec9b4b9278d41ed8161410a64ab034fd0d12bc:
 DEBUG: ran git fetch --unshallow origin 9d25b5e18d21ec488d0e3ebd92794e6ddde07288: f9ec9b4b9278d41ed8161410a64ab034fd0d12bc: in 
@@ -22,17 +22,17 @@ DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
 DEBUG: ran git checkout master in 
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard f9ec9b4b9278d41ed8161410a64ab034fd0d12bc
 DEBUG: ran git reset --hard f9ec9b4b9278d41ed8161410a64ab034fd0d12bc in 
-DEBUG: JX_LOG_LEVEL=error LC_ALL=C git clean -fd .
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
 DEBUG: ran clean --force -d . in 
 DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 9d25b5e18d21ec488d0e3ebd92794e6ddde07288
 DEBUG: ran git merge 9d25b5e18d21ec488d0e3ebd92794e6ddde07288 in 
-DEBUG: JX_LOG_LEVEL=error LC_ALL=C git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e f9ec9b4b9278d41ed8161410a64ab034fd0d12bc..HEAD
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e f9ec9b4b9278d41ed8161410a64ab034fd0d12bc..HEAD
 Merged SHA 9d25b5e18d21ec488d0e3ebd92794e6ddde07288 with commit message 'chore: Promote bdd-gh-1583929559 to version 0.0.1' into base branch master
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-create-helmfile[0m
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
-Adding repo dev http://chartmuseum-**.35.240.67.237.nip.io
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-system[0m
+Adding repo dev http://chartmuseum-jx.35.240.67.237.nip.io
 "dev" has been added to your repositories
 
 Adding repo stable https://kubernetes-charts.storage.googleapis.com
@@ -45,14 +45,14 @@ Hang tight while we grab the latest from your chart repositories...
 Update Complete. ⎈ Happy Helming!⎈ 
 
 Fetching stable/nginx-ingress
-Linting release=nginx-ingress, chart=/tmp/627982929/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
-==> Linting /tmp/627982929/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
+Linting release=nginx-ingress, chart=/tmp/361240537/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
+==> Linting /tmp/361240537/nginx-ingress/1.33.5/stable/nginx-ingress/nginx-ingress
 
 1 chart(s) linted, 0 chart(s) failed
 
 
-Showing logs for build [32mjenkins-x-versions-bot-test-env-7qm6g-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
-Adding repo dev http://chartmuseum-**.35.240.67.237.nip.io
+Showing logs for build [32mjenkins-x-versions-bot-test-env-htwgk-1[0m stage [32mpr-checks[0m and container [32mstep-lint-helmfile-apps[0m
+Adding repo dev http://chartmuseum-jx.35.240.67.237.nip.io
 "dev" has been added to your repositories
 
 Adding repo jenkins-x https://storage.googleapis.com/chartmuseum.jenkins-x.io
@@ -68,27 +68,27 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "stable" chart repository
 Update Complete. ⎈ Happy Helming!⎈ 
 
-Fetching jenkins-x/**boot-helmfile-resources
-Fetching jenkins-x/lighthouse
+Fetching jenkins-x/jxboot-helmfile-resources
 Fetching jenkins-x/tekton
 Fetching dev/bdd-gh-1583929559
-Linting release=**boot-helmfile-resources, chart=/tmp/200098786/**boot-helmfile-resources/0.0.89/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
-==> Linting /tmp/200098786/**boot-helmfile-resources/0.0.89/jenkins-x/**boot-helmfile-resources/**boot-helmfile-resources
+Fetching jenkins-x/lighthouse
+Linting release=jxboot-helmfile-resources, chart=/tmp/386197252/jxboot-helmfile-resources/0.0.89/jenkins-x/jxboot-helmfile-resources/jxboot-helmfile-resources
+==> Linting /tmp/386197252/jxboot-helmfile-resources/0.0.89/jenkins-x/jxboot-helmfile-resources/jxboot-helmfile-resources
 
 1 chart(s) linted, 0 chart(s) failed
 
-Linting release=lighthouse, chart=/tmp/200098786/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
-==> Linting /tmp/200098786/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
+Linting release=lighthouse, chart=/tmp/386197252/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
+==> Linting /tmp/386197252/lighthouse/0.0.485/jenkins-x/lighthouse/lighthouse
 
 1 chart(s) linted, 0 chart(s) failed
 
-Linting release=tekton, chart=/tmp/200098786/tekton/0.0.48/jenkins-x/tekton/tekton
-==> Linting /tmp/200098786/tekton/0.0.48/jenkins-x/tekton/tekton
+Linting release=tekton, chart=/tmp/386197252/tekton/0.0.48/jenkins-x/tekton/tekton
+==> Linting /tmp/386197252/tekton/0.0.48/jenkins-x/tekton/tekton
 
 1 chart(s) linted, 0 chart(s) failed
 
-Linting release=bdd-gh-1583929559, chart=/tmp/200098786/bdd-gh-1583929559/0.0.1/dev/bdd-gh-1583929559/bdd-gh-1583929559
-==> Linting /tmp/200098786/bdd-gh-1583929559/0.0.1/dev/bdd-gh-1583929559/bdd-gh-1583929559
+Linting release=bdd-gh-1583929559, chart=/tmp/386197252/bdd-gh-1583929559/0.0.1/dev/bdd-gh-1583929559/bdd-gh-1583929559
+==> Linting /tmp/386197252/bdd-gh-1583929559/0.0.1/dev/bdd-gh-1583929559/bdd-gh-1583929559
 
 1 chart(s) linted, 0 chart(s) failed
 
